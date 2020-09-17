@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OmikujiiApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="V3b-jf-fN7">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="omikuji_body" translatesAutoresizingMaskIntoConstraints="NO" id="cfl-ej-llr">
+                                <rect key="frame" x="110.5" y="52" width="193" height="312"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="193" id="sxm-H3-gZD"/>
+                                    <constraint firstAttribute="height" constant="312" id="tf6-L2-uD2"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="omikuji_head" translatesAutoresizingMaskIntoConstraints="NO" id="TBw-PO-cYN">
+                                <rect key="frame" x="110.5" y="364" width="193" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="7sE-rm-3Hn"/>
+                                    <constraint firstAttribute="width" constant="193" id="hff-eY-Vip"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uHq-vH-gay">
+                                <rect key="frame" x="30" y="454" width="364" height="266"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="omikuji_stick" translatesAutoresizingMaskIntoConstraints="NO" id="XBU-68-7W7">
+                                        <rect key="frame" x="0.0" y="0.0" width="247" height="757"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="なんか" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIh-er-Snv">
+                                        <rect key="frame" x="114.5" y="0.0" width="18" height="757"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="18" id="Hxf-3R-Jxk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="XBU-68-7W7" firstAttribute="leading" secondItem="uHq-vH-gay" secondAttribute="leading" id="5HV-9O-0WU"/>
+                                    <constraint firstItem="LIh-er-Snv" firstAttribute="top" secondItem="uHq-vH-gay" secondAttribute="top" id="64l-BV-Awe"/>
+                                    <constraint firstAttribute="bottom" secondItem="XBU-68-7W7" secondAttribute="bottom" id="Sp9-dT-kvy"/>
+                                    <constraint firstAttribute="trailing" secondItem="XBU-68-7W7" secondAttribute="trailing" id="Zbs-eZ-A4h"/>
+                                    <constraint firstItem="XBU-68-7W7" firstAttribute="top" secondItem="uHq-vH-gay" secondAttribute="top" id="rb3-I8-YCx"/>
+                                    <constraint firstItem="LIh-er-Snv" firstAttribute="centerX" secondItem="uHq-vH-gay" secondAttribute="centerX" id="tCm-m0-XUC"/>
+                                    <constraint firstAttribute="bottom" secondItem="LIh-er-Snv" secondAttribute="bottom" id="xmc-fa-zlW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cfl-ej-llr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="3w6-Zs-sln"/>
+                            <constraint firstItem="TBw-PO-cYN" firstAttribute="top" secondItem="cfl-ej-llr" secondAttribute="bottom" id="9jt-og-src"/>
+                            <constraint firstAttribute="bottom" secondItem="V3b-jf-fN7" secondAttribute="bottom" id="HvA-xb-yth"/>
+                            <constraint firstItem="TBw-PO-cYN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OgY-m7-eHh"/>
+                            <constraint firstItem="cfl-ej-llr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c4z-Vi-DeV"/>
+                            <constraint firstItem="V3b-jf-fN7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gZj-Eq-jEr"/>
+                            <constraint firstItem="V3b-jf-fN7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="trn-Th-Exf"/>
+                            <constraint firstItem="V3b-jf-fN7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yg0-oc-CDR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.04347826086958" y="126.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="1024" height="628"/>
+        <image name="omikuji_body" width="1899" height="3074"/>
+        <image name="omikuji_head" width="1906" height="370"/>
+        <image name="omikuji_stick" width="247" height="757"/>
+    </resources>
+</document>
